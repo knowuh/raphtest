@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>raphael test</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Noah Paessel">
+	<link rel="stylesheet" href="css/screen.css" type="text/css" charset="utf-8" media="screen,projection">
+    <script src="lib/jquery.js" type="text/javascript"></script>
+	<script src="lib/draggable.js" type="text/javascript"></script>
+	<script src="lib/raphael.js" type="text/javascript" charset="utf-8"></script>
+	
+
+</head>
+<body>
+	<p class="title">raphael test</p>
+	<div id="mycanvas"></div>
+	<br>
+	<div id="reporter" class="rep"></div>
+	<script type="text/javascript" charset="utf-8">
+		var paper = Raphael("mycanvas", 400, 200);
+		
+		var c = paper.circle(30,30,25); // draw a circle at coordinate 10,10 with radius of 10
+		c.attr({fill: "#DF1", stroke: "#202", opacity: 0.75, "stroke-width": 2.0}); 
+		var b = paper.circle(100,60,25); // draw a circle at coordinate 10,10 with radius of 10
+		b.attr({fill: "#DF4", stroke: "#202", opacity: 0.75, "stroke-width": 2.0}); 
+		draggable(c);
+		draggable(b);
+	</script>
+</body>
+</html>

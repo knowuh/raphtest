@@ -1,0 +1,26 @@
+body {
+	text-align: center;
+}
+#mycanvas {
+	background-color: #EDE;
+	width:  400px;
+	height: 200px;
+	border: dashed;
+	margin: 0 auto;
+}
+.rep {
+	width:  400px;
+	text-align: left;
+	line-height: 1.1em;
+	font-family: sans-serif;
+	font-size: 2em;
+	color: #323;
+	margin: 0 auto;
+}
+.title {
+	font-family: sans-serif;
+	font-size: 2em;
+	color: #323;
+	text-align: center;
+	letter-spacing: 0.7em;
+}
